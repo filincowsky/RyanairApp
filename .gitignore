@@ -1,0 +1,6 @@
+*.DS_Store
+.DS_Store
+RyanairApp.xcworkspace/xcuserdata/*.xcuserdatad/xcdebugger/
+RyanairApp.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate
+RyanairApp.xcodeproj/xcuserdata/*.xcuserdatad/xcschemes/xcschememanagement.plist
+RyanairApp.xcodeproj/project.xcworkspace/xcuserdata/*.xcuserdatad/UserInterfaceState.xcuserstate

@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8E07074D27D003B800FE25CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07074C27D003B800FE25CB /* AppDelegate.swift */; };
+		8E07075227D003B800FE25CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E07075027D003B800FE25CB /* Main.storyboard */; };
+		8E07075427D003BA00FE25CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E07075327D003BA00FE25CB /* Assets.xcassets */; };
+		8E07075727D003BA00FE25CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E07075527D003BA00FE25CB /* LaunchScreen.storyboard */; };
+		8E07076227D003BA00FE25CB /* RyanairAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07076127D003BA00FE25CB /* RyanairAppTests.swift */; };
+		8E07076D27D003BB00FE25CB /* RyanairAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07076C27D003BB00FE25CB /* RyanairAppUITests.swift */; };
+		8E07077F27D059F400FE25CB /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E07077E27D059F400FE25CB /* logo.png */; };
+		8E07078527D05C8A00FE25CB /* routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07078327D05C8A00FE25CB /* routes.swift */; };
+		8E07078627D05C8A00FE25CB /* api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07078427D05C8A00FE25CB /* api.swift */; };
+		8E07078927D05CB100FE25CB /* FlightSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07078727D05CB000FE25CB /* FlightSearchViewModel.swift */; };
+		8E07079B27D05D2000FE25CB /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079527D05D2000FE25CB /* Flight.swift */; };
+		8E07079C27D05D2000FE25CB /* Fare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079627D05D2000FE25CB /* Fare.swift */; };
+		8E07079D27D05D2000FE25CB /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079727D05D2000FE25CB /* Trip.swift */; };
+		8E07079E27D05D2000FE25CB /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079827D05D2000FE25CB /* SearchResult.swift */; };
+		8E07079F27D05D2000FE25CB /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079927D05D2000FE25CB /* Market.swift */; };
+		8E0707A027D05D2000FE25CB /* Station.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E07079A27D05D2000FE25CB /* Station.swift */; };
+		8E0707B527D0770800FE25CB /* FlightSearchFormVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0707B027D0770800FE25CB /* FlightSearchFormVC.swift */; };
+		8E0707B727D0770800FE25CB /* TableViewManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0707B227D0770800FE25CB /* TableViewManager.swift */; };
+		8E0707B927D0770800FE25CB /* StationTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0707B427D0770800FE25CB /* StationTbCell.swift */; };
+		8E0707BB27D077A000FE25CB /* StationTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E0707BA27D077A000FE25CB /* StationTbCell.xib */; };
+		F335E29927D0E1770028D8E2 /* StationListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335E29827D0E1770028D8E2 /* StationListVC.swift */; };
+		F335E29B27D0E1DF0028D8E2 /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335E29A27D0E1DF0028D8E2 /* StationListViewModel.swift */; };
+		F335E29D27D101D40028D8E2 /* SearchTag.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335E29C27D101D40028D8E2 /* SearchTag.swift */; };
+		F335E2A227D110290028D8E2 /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = F335E2A027D110290028D8E2 /* minus.png */; };
+		F335E2A327D110290028D8E2 /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = F335E2A127D110290028D8E2 /* plus.png */; };
+		F335E2A527D157EC0028D8E2 /* PaxSettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F335E2A427D157EC0028D8E2 /* PaxSettingViewModel.swift */; };
+		F39F88E627D2306B0063271B /* SearchParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39F88E527D2306B0063271B /* SearchParams.swift */; };
+		F39F88E927D23CCB0063271B /* SearchResultTbCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F39F88E727D23CCB0063271B /* SearchResultTbCell.xib */; };
+		F39F88EA27D23CCB0063271B /* SearchResultTbCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39F88E827D23CCB0063271B /* SearchResultTbCell.swift */; };
+		F39F88EC27D2517D0063271B /* FlightFareItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39F88EB27D2517D0063271B /* FlightFareItem.swift */; };
+		F39F88EF27D25D4D0063271B /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F39F88EE27D25D4D0063271B /* Utils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8E07075E27D003BA00FE25CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E07074127D003B700FE25CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E07074827D003B700FE25CB;
+			remoteInfo = "RyanairApp";
+		};
+		8E07076927D003BB00FE25CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8E07074127D003B700FE25CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8E07074827D003B700FE25CB;
+			remoteInfo = "RyanairApp";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8E07074927D003B800FE25CB /* RyanairApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RyanairApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07074C27D003B800FE25CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8E07075127D003B800FE25CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8E07075327D003BA00FE25CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8E07075627D003BA00FE25CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8E07075827D003BA00FE25CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E07075D27D003BA00FE25CB /* RyanairAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyanairAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07076127D003BA00FE25CB /* RyanairAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanairAppTests.swift; sourceTree = "<group>"; };
+		8E07076327D003BA00FE25CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E07076827D003BB00FE25CB /* RyanairAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RyanairAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E07076C27D003BB00FE25CB /* RyanairAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RyanairAppUITests.swift; sourceTree = "<group>"; };
+		8E07076E27D003BB00FE25CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8E07077E27D059F400FE25CB /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		8E07078327D05C8A00FE25CB /* routes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = routes.swift; sourceTree = "<group>"; };
+		8E07078427D05C8A00FE25CB /* api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = api.swift; sourceTree = "<group>"; };
+		8E07078727D05CB000FE25CB /* FlightSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSearchViewModel.swift; sourceTree = "<group>"; };
+		8E07079527D05D2000FE25CB /* Flight.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		8E07079627D05D2000FE25CB /* Fare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fare.swift; sourceTree = "<group>"; };
+		8E07079727D05D2000FE25CB /* Trip.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
+		8E07079827D05D2000FE25CB /* SearchResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		8E07079927D05D2000FE25CB /* Market.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		8E07079A27D05D2000FE25CB /* Station.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Station.swift; sourceTree = "<group>"; };
+		8E0707B027D0770800FE25CB /* FlightSearchFormVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightSearchFormVC.swift; sourceTree = "<group>"; };
+		8E0707B227D0770800FE25CB /* TableViewManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewManager.swift; sourceTree = "<group>"; };
+		8E0707B427D0770800FE25CB /* StationTbCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StationTbCell.swift; sourceTree = "<group>"; };
+		8E0707BA27D077A000FE25CB /* StationTbCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationTbCell.xib; sourceTree = "<group>"; };
+		F335E29827D0E1770028D8E2 /* StationListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListVC.swift; sourceTree = "<group>"; };
+		F335E29A27D0E1DF0028D8E2 /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		F335E29C27D101D40028D8E2 /* SearchTag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTag.swift; sourceTree = "<group>"; };
+		F335E2A027D110290028D8E2 /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		F335E2A127D110290028D8E2 /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		F335E2A427D157EC0028D8E2 /* PaxSettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaxSettingViewModel.swift; sourceTree = "<group>"; };
+		F39F88E527D2306B0063271B /* SearchParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchParams.swift; sourceTree = "<group>"; };
+		F39F88E727D23CCB0063271B /* SearchResultTbCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultTbCell.xib; sourceTree = "<group>"; };
+		F39F88E827D23CCB0063271B /* SearchResultTbCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTbCell.swift; sourceTree = "<group>"; };
+		F39F88EB27D2517D0063271B /* FlightFareItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightFareItem.swift; sourceTree = "<group>"; };
+		F39F88EE27D25D4D0063271B /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8E07074627D003B700FE25CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07075A27D003BA00FE25CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07076527D003BB00FE25CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8E07074027D003B700FE25CB = {
+			isa = PBXGroup;
+			children = (
+				8E07074B27D003B800FE25CB /* RyanairApp */,
+				8E07076027D003BA00FE25CB /* RyanairAppTests */,
+				8E07076B27D003BB00FE25CB /* RyanairAppUITests */,
+				8E07074A27D003B800FE25CB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8E07074A27D003B800FE25CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8E07074927D003B800FE25CB /* RyanairApp.app */,
+				8E07075D27D003BA00FE25CB /* RyanairAppTests.xctest */,
+				8E07076827D003BB00FE25CB /* RyanairAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8E07074B27D003B800FE25CB /* RyanairApp */ = {
+			isa = PBXGroup;
+			children = (
+				F39F88ED27D25D380063271B /* common */,
+				8E07078227D05C4500FE25CB /* api */,
+				8E07074C27D003B800FE25CB /* AppDelegate.swift */,
+				8E07075327D003BA00FE25CB /* Assets.xcassets */,
+				8E07075827D003BA00FE25CB /* Info.plist */,
+				8E07075527D003BA00FE25CB /* LaunchScreen.storyboard */,
+				8E07075027D003B800FE25CB /* Main.storyboard */,
+				8E07077B27D059B300FE25CB /* model */,
+				8E07077A27D059A300FE25CB /* res */,
+				8E0707AF27D076E400FE25CB /* view */,
+				8E07077D27D059BF00FE25CB /* viewmodel */,
+			);
+			path = RyanairApp;
+			sourceTree = "<group>";
+		};
+		8E07076027D003BA00FE25CB /* RyanairAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				8E07076127D003BA00FE25CB /* RyanairAppTests.swift */,
+				8E07076327D003BA00FE25CB /* Info.plist */,
+			);
+			path = RyanairAppTests;
+			sourceTree = "<group>";
+		};
+		8E07076B27D003BB00FE25CB /* RyanairAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8E07076C27D003BB00FE25CB /* RyanairAppUITests.swift */,
+				8E07076E27D003BB00FE25CB /* Info.plist */,
+			);
+			path = RyanairAppUITests;
+			sourceTree = "<group>";
+		};
+		8E07077A27D059A300FE25CB /* res */ = {
+			isa = PBXGroup;
+			children = (
+				F335E2A027D110290028D8E2 /* minus.png */,
+				F335E2A127D110290028D8E2 /* plus.png */,
+				8E07077E27D059F400FE25CB /* logo.png */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		8E07077B27D059B300FE25CB /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F39F88E527D2306B0063271B /* SearchParams.swift */,
+				8E07079627D05D2000FE25CB /* Fare.swift */,
+				8E07079527D05D2000FE25CB /* Flight.swift */,
+				8E07079927D05D2000FE25CB /* Market.swift */,
+				8E07079827D05D2000FE25CB /* SearchResult.swift */,
+				8E07079A27D05D2000FE25CB /* Station.swift */,
+				8E07079727D05D2000FE25CB /* Trip.swift */,
+				F39F88EB27D2517D0063271B /* FlightFareItem.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		8E07077D27D059BF00FE25CB /* viewmodel */ = {
+			isa = PBXGroup;
+			children = (
+				8E07078727D05CB000FE25CB /* FlightSearchViewModel.swift */,
+				F335E29A27D0E1DF0028D8E2 /* StationListViewModel.swift */,
+				F335E2A427D157EC0028D8E2 /* PaxSettingViewModel.swift */,
+			);
+			path = viewmodel;
+			sourceTree = "<group>";
+		};
+		8E07078227D05C4500FE25CB /* api */ = {
+			isa = PBXGroup;
+			children = (
+				8E07078427D05C8A00FE25CB /* api.swift */,
+				8E07078327D05C8A00FE25CB /* routes.swift */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		8E0707AF27D076E400FE25CB /* view */ = {
+			isa = PBXGroup;
+			children = (
+				8E0707BC27D0827E00FE25CB /* cell */,
+				8E0707B027D0770800FE25CB /* FlightSearchFormVC.swift */,
+				8E0707B227D0770800FE25CB /* TableViewManager.swift */,
+				F335E29827D0E1770028D8E2 /* StationListVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		8E0707BC27D0827E00FE25CB /* cell */ = {
+			isa = PBXGroup;
+			children = (
+				8E0707B427D0770800FE25CB /* StationTbCell.swift */,
+				8E0707BA27D077A000FE25CB /* StationTbCell.xib */,
+				F39F88E727D23CCB0063271B /* SearchResultTbCell.xib */,
+				F39F88E827D23CCB0063271B /* SearchResultTbCell.swift */,
+			);
+			path = cell;
+			sourceTree = "<group>";
+		};
+		F39F88ED27D25D380063271B /* common */ = {
+			isa = PBXGroup;
+			children = (
+				F335E29C27D101D40028D8E2 /* SearchTag.swift */,
+				F39F88EE27D25D4D0063271B /* Utils.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8E07074827D003B700FE25CB /* RyanairApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07077127D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairApp" */;
+			buildPhases = (
+				8E07074527D003B700FE25CB /* Sources */,
+				8E07074627D003B700FE25CB /* Frameworks */,
+				8E07074727D003B700FE25CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RyanairApp;
+			productName = "RyanairApp";
+			productReference = 8E07074927D003B800FE25CB /* RyanairApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8E07075C27D003BA00FE25CB /* RyanairAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07077427D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairAppTests" */;
+			buildPhases = (
+				8E07075927D003BA00FE25CB /* Sources */,
+				8E07075A27D003BA00FE25CB /* Frameworks */,
+				8E07075B27D003BA00FE25CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E07075F27D003BA00FE25CB /* PBXTargetDependency */,
+			);
+			name = RyanairAppTests;
+			productName = "RyanairAppTests";
+			productReference = 8E07075D27D003BA00FE25CB /* RyanairAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8E07076727D003BB00FE25CB /* RyanairAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8E07077727D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairAppUITests" */;
+			buildPhases = (
+				8E07076427D003BB00FE25CB /* Sources */,
+				8E07076527D003BB00FE25CB /* Frameworks */,
+				8E07076627D003BB00FE25CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8E07076A27D003BB00FE25CB /* PBXTargetDependency */,
+			);
+			name = RyanairAppUITests;
+			productName = "RyanairAppUITests";
+			productReference = 8E07076827D003BB00FE25CB /* RyanairAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8E07074127D003B700FE25CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vitor Filincowsky";
+				TargetAttributes = {
+					8E07074827D003B700FE25CB = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					8E07075C27D003BA00FE25CB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E07074827D003B700FE25CB;
+					};
+					8E07076727D003BB00FE25CB = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 8E07074827D003B700FE25CB;
+					};
+				};
+			};
+			buildConfigurationList = 8E07074427D003B700FE25CB /* Build configuration list for PBXProject "RyanairApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8E07074027D003B700FE25CB;
+			productRefGroup = 8E07074A27D003B800FE25CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8E07074827D003B700FE25CB /* RyanairApp */,
+				8E07075C27D003BA00FE25CB /* RyanairAppTests */,
+				8E07076727D003BB00FE25CB /* RyanairAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8E07074727D003B700FE25CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E07077F27D059F400FE25CB /* logo.png in Resources */,
+				8E0707BB27D077A000FE25CB /* StationTbCell.xib in Resources */,
+				F39F88E927D23CCB0063271B /* SearchResultTbCell.xib in Resources */,
+				F335E2A227D110290028D8E2 /* minus.png in Resources */,
+				8E07075727D003BA00FE25CB /* LaunchScreen.storyboard in Resources */,
+				8E07075427D003BA00FE25CB /* Assets.xcassets in Resources */,
+				F335E2A327D110290028D8E2 /* plus.png in Resources */,
+				8E07075227D003B800FE25CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07075B27D003BA00FE25CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07076627D003BB00FE25CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8E07074527D003B700FE25CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F39F88EC27D2517D0063271B /* FlightFareItem.swift in Sources */,
+				F335E2A527D157EC0028D8E2 /* PaxSettingViewModel.swift in Sources */,
+				8E0707B727D0770800FE25CB /* TableViewManager.swift in Sources */,
+				8E0707B527D0770800FE25CB /* FlightSearchFormVC.swift in Sources */,
+				8E07079D27D05D2000FE25CB /* Trip.swift in Sources */,
+				8E07078627D05C8A00FE25CB /* api.swift in Sources */,
+				F335E29B27D0E1DF0028D8E2 /* StationListViewModel.swift in Sources */,
+				8E07079E27D05D2000FE25CB /* SearchResult.swift in Sources */,
+				F39F88E627D2306B0063271B /* SearchParams.swift in Sources */,
+				F335E29927D0E1770028D8E2 /* StationListVC.swift in Sources */,
+				8E07079F27D05D2000FE25CB /* Market.swift in Sources */,
+				F335E29D27D101D40028D8E2 /* SearchTag.swift in Sources */,
+				8E0707B927D0770800FE25CB /* StationTbCell.swift in Sources */,
+				F39F88EA27D23CCB0063271B /* SearchResultTbCell.swift in Sources */,
+				8E07078927D05CB100FE25CB /* FlightSearchViewModel.swift in Sources */,
+				8E0707A027D05D2000FE25CB /* Station.swift in Sources */,
+				8E07078527D05C8A00FE25CB /* routes.swift in Sources */,
+				F39F88EF27D25D4D0063271B /* Utils.swift in Sources */,
+				8E07074D27D003B800FE25CB /* AppDelegate.swift in Sources */,
+				8E07079C27D05D2000FE25CB /* Fare.swift in Sources */,
+				8E07079B27D05D2000FE25CB /* Flight.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07075927D003BA00FE25CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E07076227D003BA00FE25CB /* RyanairAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8E07076427D003BB00FE25CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E07076D27D003BB00FE25CB /* RyanairAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8E07075F27D003BA00FE25CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E07074827D003B700FE25CB /* RyanairApp */;
+			targetProxy = 8E07075E27D003BA00FE25CB /* PBXContainerItemProxy */;
+		};
+		8E07076A27D003BB00FE25CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8E07074827D003B700FE25CB /* RyanairApp */;
+			targetProxy = 8E07076927D003BB00FE25CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8E07075027D003B800FE25CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E07075127D003B800FE25CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8E07075527D003BA00FE25CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8E07075627D003BA00FE25CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8E07076F27D003BB00FE25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8E07077027D003BB00FE25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8E07077227D003BB00FE25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8E07077327D003BB00FE25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8E07077527D003BB00FE25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RyanairApp.app/RyanairApp";
+			};
+			name = Debug;
+		};
+		8E07077627D003BB00FE25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RyanairApp.app/RyanairApp";
+			};
+			name = Release;
+		};
+		8E07077827D003BB00FE25CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RyanairApp";
+			};
+			name = Debug;
+		};
+		8E07077927D003BB00FE25CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = RyanairAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = vribeiro.RyanairAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "RyanairApp";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8E07074427D003B700FE25CB /* Build configuration list for PBXProject "RyanairApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07076F27D003BB00FE25CB /* Debug */,
+				8E07077027D003BB00FE25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E07077127D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07077227D003BB00FE25CB /* Debug */,
+				8E07077327D003BB00FE25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E07077427D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07077527D003BB00FE25CB /* Debug */,
+				8E07077627D003BB00FE25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8E07077727D003BB00FE25CB /* Build configuration list for PBXNativeTarget "RyanairAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8E07077827D003BB00FE25CB /* Debug */,
+				8E07077927D003BB00FE25CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8E07074127D003B700FE25CB /* Project object */;
+}
